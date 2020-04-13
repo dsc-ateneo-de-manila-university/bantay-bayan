@@ -25,20 +25,66 @@
   <!-- initialize the SDK after all desired features are loaded -->
   <script defer src="/__/firebase/init.js"></script>
 
-  <link rel="stylesheet" href="./stylesheets/normalize.css">
-  <link rel="stylesheet" href="./stylesheets/main.css">
-  <link rel="stylesheet" href="./stylesheets/styles.css">
+  <link rel="stylesheet" href="../stylesheets/normalize.css">
+  <link rel="stylesheet" href="../stylesheets/main.css">
+  <link rel="stylesheet" href="../stylesheets/styles.css">
+
 
 </head>
 
 <body>
   <nav>
-    Insert Navbar here
+    <a href="javascript:void(0);" class="burger" type="button" onclick="myFunction()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </a>
+    <div>
+      <a href="#"><img src="../assets/images/bantay_bayan_logo.JPG" alt="logo" width="170"></a>
+    </div>
+    <div class = "navPages" id = "Pages">
+      <a class="blue" href="#">About</a>
+      <a class="red"href="#">Forms</a>
+      <a class="blue"href="#">FAQs</a>
+      <a class="red"href="#">Contact</a>
+    </div> 
+    
+    <script>
+      function myFunction() {
+        var x = document.getElementById("Pages");
+        if (x.className === "navPages") {
+          x.className += " responsive";
+        } else {
+          x.className = "navPages";
+        }
+      }
+    </script>
   </nav>
 
+  <div class="container">
+    PLACE CONTENT HERE
+
+  </div>
+
   <footer>
-    Insert footer Here
+    <div class="footerContent">
+        <img src="../assets/images/bantay_bayan_logo.JPG" alt="logo" width="170">
+        <div class="footerSubContent">
+            <div class="footerIcons">
+                <a href="#"><img src="../assets/images/iconfinder_Rounded_Facebook_svg_5282541.png" alt="logo" width="50"></a>
+                <a href="#"><img src="../assets/images/iconfinder_Rounded_Instagram_svg_5282544 (1).png" alt="logo" width="50"></a>
+                <a href="#"><img src="../assets/images/iconfinder_Rounded_Twitter5_svg_5282551.png" alt="logo" width="50"></a>
+            </div>
+            <label>&copy; 2020 GoodGovPH. All Rights Reserved.</label>
+        </div>
+        
+    </div>
+    <div class="footerDSC">
+        <hr>
+        <label>Passionately Designed and Developed by Developer Student Clubs Loyola</label>
+    </div> 
   </footer>
+
   <script src="./scripts/index.js"></script>
 </body>
 
