@@ -34,35 +34,38 @@
 
 <body>
   <nav>
-    <a href="javascript:void(0);" class="burger" type="button" onclick="myFunction()">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </a>
+    <input type = "checkbox" id = "check">
+    <label for = "check" class = "checkbtn">
+      <div class="burger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </label>
+
     <div>
-      <a href="#"><img src="../assets/images/bantay_bayan_logo.JPG" alt="logo" width="170"></a>
+      <a class="navLogo" href="#"><img src="../assets/images/bantay_bayan_logo.JPG" alt="logo" width="170"></a>
     </div>
-    <div class = "navPages" id = "Pages">
-      <a class="blue" href="#">About</a>
-      <a class="red"href="#">Forms</a>
-      <a class="blue"href="#">FAQs</a>
-      <a class="red"href="#">Contact</a>
-    </div> 
+    <ul>
+      <li class="X"><label for="check"><b>X</b></label></li>
+      <li><a class="blue" href="#">About</a></li>
+      <li><a class="red" href="#">Forms</a></li>
+      <li><a class="blue" href="#">FAQs</a></li>
+      <li><a class="red" href="#">Contact</a></li>
+    </ul> 
     
-    <script>
-      function myFunction() {
-        var x = document.getElementById("Pages");
-        if (x.className === "navPages") {
-          x.className += " responsive";
-        } else {
-          x.className = "navPages";
-        }
-      }
-    </script>
   </nav>
 
   <div class="container">
-    PLACE CONTENT HERE
+    <div class="main">
+      main
+    </div>
+    <div class="volunteer">
+      volunteer
+    </div>
+    <div class="partner">
+      partner
+    </div>
 
   </div>
 
