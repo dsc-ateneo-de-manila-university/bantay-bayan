@@ -9,6 +9,8 @@ nav{
     justify-content: center;
     align-items: center;
     position: fixed ;
+    left: 0;
+    top: 0;
     width: 100vw;
     height: 100px;
     background-color: white;
@@ -50,29 +52,7 @@ nav{
 .about:hover {
     color: #2B3B92;
 }
-.aboutdrop{
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    align-self: center;
-    text-align: center;
-    
-    position: absolute;
-    background-color: white;
-    width: 220px;
-    min-height: 160px;
 
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.aboutdrop a{
-    display: block;
-    padding: 14px 32px;
-}
-.about:hover + .aboutdrop{display: flex;}
-.aboutdrop:hover {display: flex;}
-.aboutdrop a:hover {background-color: #ddd;}
-/*************************************************************************************************************/
 .forms:hover {
     color: #EB413A;
 }
@@ -97,62 +77,25 @@ nav{
 .forms:hover + .formsdrop{display: flex;}
 .formsdrop:hover {display: flex;}
 .formsdrop a:hover {background-color: #ddd;}
-/*************************************************************************************************************/
+
 .faqs:hover {
     color: #2B3B92;
 }
-.faqsdrop{
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    align-self: center;
-    text-align: center;
-    
-    position: absolute;
-    background-color: white;
-    width: 180px;
-    height: 93px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.faqsdrop a{
-    display: block;
-    padding: 14px 32px;
-}
-.faqs:hover + .faqsdrop{display: flex;}
-.faqsdrop:hover {display: flex;}
-.faqsdrop a:hover {background-color: #ddd;}
-/*************************************************************************************************************/
-.contact:hover {
+
+.team:hover{
     color: #EB413A;
 }
-.contactdrop{
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    align-self: center;
-    text-align: center;
-    
-    position: absolute;
-    background-color: white;
-    width: 180px;
-    height: 93px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1;
+
+.contact:hover {
+    color: #2B3B92;
 }
-.contactdrop a{
-    display: block;
-    padding: 14px 32px;
-}
-.contact:hover + .contactdrop{display: flex;}
-.contactdrop:hover {display: flex;}
-.contactdrop a:hover {background-color: #ddd;}
 /*************************************************************************************************************/
 .main{
     width: 100vw;
     height: 600px;
     max-width: 100%;
     padding-top: 100px;
+    margin-top: 70px;;
     background: url("../assets/images/bantay 1.png");
     background-size: cover;
 }
@@ -359,7 +302,7 @@ footer {
         flex-direction: column;
         justify-content: space-around;
         width: 100vw;
-        max-width: 100%;
+        max-width: inherit;
         height: 100vh;
         align-items: center;
         text-align: center;
@@ -407,6 +350,7 @@ footer {
 
     .helpdesk{
         flex-direction: column-reverse;
+        overflow: hidden;
     }
     
     .helpdesk_content{
@@ -421,6 +365,7 @@ footer {
 
     .survey{
         flex-direction: column;
+        overflow: hidden;
     }
 
     .survey_content{
@@ -441,6 +386,7 @@ footer {
     }
     .main{
         height: 470px;
+        margin-top: 0;
     }
 
     .footerContent{
