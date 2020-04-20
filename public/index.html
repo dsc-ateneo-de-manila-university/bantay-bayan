@@ -25,6 +25,8 @@
   <!-- initialize the SDK after all desired features are loaded -->
   <script defer src="/__/firebase/init.js"></script>
 
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="../stylesheets/normalize.css">
   <link rel="stylesheet" href="../stylesheets/main.css">
   <link rel="stylesheet" href="../stylesheets/styles.css">
@@ -35,25 +37,20 @@
 <body>
 
   <nav>
-    <input type = "checkbox" id = "check">
-
-    <label for = "check" class = "checkbtn">
-      <div class="burger">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
+    <label for = "check" class = "burger_icon">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
     </label>
-    
-    <div class="navLogo">
-      <a href="#">
-        <img src="../assets/images/bantay_bayan_logo.png" alt="logo" width="170">
-      </a>
-    </div>
 
+    <input type = "checkbox" class="checkbox" id="check">
     
-    <ul>
-      <li class="X"><label for="check"><b>X</b></label></li>
+    <a href="#" >
+      <img src="../assets/images/bantay_bayan_logo.png"  class="navLogo" alt="logo">
+    </a>
+    
+    <ul class="page_menu">
+      <li><!--Buffer--></li>
       <li>
         <a class="about" href="#">About</a>
         <div class="aboutdrop">
@@ -86,53 +83,51 @@
         </div>
       </li>
     </ul> 
-    
   </nav>
 
-  <div class="container">
 
-    <div class="main">
-      <div class="main_content">
-        <img src="../assets/images/bantay_bayan_logo.png">
-        <br>
-        <label>Para sa mabuting pamamahala sa panahon ng krisis!</label>
-      </div>
-    </div>
+  <div class="main">
+    <div class="main_content">
+      <img src="../assets/images/bantay_bayan_logo.png">
+      <br>
+      <label>Para sa mabuting pamamahala sa panahon ng krisis!</label>
+    </div>   
+  </div>
 
-    <div class="helpdesk">
-      <div class="helpdesk_content">
-        <h1>BANTAY BAYAN <br> HELP DESK </h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim facilis est eum deserunt. 
-          Dolorem, eveniet quam, accusamus, ut dolores dicta quis quo omnis enim ducimus optio dolor earum 
-          impedit.
-        </p>
-        <a href="#">SUBMIT A COMPLAINT</a>
-      </div>
-      <div class="helpdesk_pic">
-        <img src="../assets/images/Image.png">
-      </div>
+  <div class="helpdesk">
+    <div class="helpdesk_content">
+      <h1>BANTAY BAYAN <br> HELP DESK </h1>
+      <p>
+        Gamit ang Bantay Bayan Helpdesk, maaaring mag-sumite ng tanong o reklamo ang bawat mamamayan ukol sa 
+        pag-responde ng LGU sa <br> COVID-19.
+      </p>
+      <a href="#">SEEK LEGAL AID</a>
     </div>
+     
+    <img src="../assets/images/Image.png" class="helpdesk_pic">
+    
+  </div>
 
-    <div class="survey">
-      <div>
-        <img class="survey_pic" src="../assets/images/Image.png">
-      </div>
-      <div class="survey_content">
-        <h1>WEEKLY LGU <br> RESPONSE SURVEY </h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim facilis est eum deserunt. 
-          Dolorem, eveniet quam, accusamus, ut dolores dicta quis quo omnis enim ducimus optio dolor earum 
-          impedit.
-        </p>
-        <a href="#">SUBMIT LGU RESPONSE</a>
-      </div>
+  <div class="survey">
+
+    <img class="survey_pic" src="../assets/images/Image.png">
+
+    <div class="survey_content">
+      <h1>WEEKLY LGU <br> RESPONSE SURVEY </h1>
+      <p>
+        Gamit ang isang diagnostic tool (survey), linggo-linggong inaaseso ng bawat bantay-bayan ang LGU base.
+      </p>
+      <a href="#">SUBMIT LGU RESPONSE</a>
     </div>
-    <div class="volunteer">
-      <div class="volunteer_content">
-        <h1>CALL FOR VOLUNTEERS</h1>
-        <a href="#"><strong>VOLUNTEER NOW</strong></a>
+  </div>
+
+  <div class="volunteer">
+    <div class="volunteer_content">
+      <div class="volunteer_label">
+        <h1>Mag-volunteer Na!</h1>
+        <h3>Basahin ang primer -></h3>
       </div>
+      <a href="#">VOLUNTEER NOW</a>
       <div class="minimen">
         <img src="../assets/images/Volunteers.png">
         <img src="../assets/images/Volunteers.png">
@@ -140,11 +135,10 @@
         <img src="../assets/images/Volunteers.png">
       </div>
     </div>
-
   </div>
 
-  <footer>
 
+  <footer>
     <div class="footerContent">
         <img src="../assets/images/bantay_bayan_logo.png" alt="logo" width="170">
         <div class="footerSubContent">
@@ -161,11 +155,9 @@
         <hr>
         <label>Passionately Designed and Developed by Developer Student Clubs Loyola</label>
     </div> 
-
   </footer>
 
   <script src="./scripts/index.js"></script>
-  
 </body>
 
 </html>
