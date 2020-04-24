@@ -2,3 +2,8 @@ html,
 body {
     background: #F8F8F8;
 }
+
+.container {
+    margin-top: 100px;
+    height: 100vh;
+}
