@@ -348,6 +348,7 @@ footer {
 .enm_bantaybayan_card1 h1, .enm_bantaybayan_card2 h1, .enm_bantaybayan_card3 h1, .enm_bantaybayan_card4 h1{
     color: #EC403D;
     font-size: 7vh;
+    font-family: 'Open Sans', sans-serif;
     margin: 0 2vw;
 }
 .enm_bantaybayan_card1 p, .enm_bantaybayan_card2 p, .enm_bantaybayan_card3 p, .enm_bantaybayan_card4 p{
@@ -614,7 +615,7 @@ footer {
 }
 .org_content{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin-bottom: 90px;
 }
@@ -623,6 +624,7 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 15%;
+    margin: 0 20%;
 }
 .the_initiative_ph_logo{
     width: 120px;
@@ -638,6 +640,7 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 15%;
+    margin: 0 20%;
 }
 .kadiwa_logo{
     width: 120px;
@@ -663,7 +666,7 @@ footer {
 /*************************************************************************************************************/
 @media screen and (max-width: 1330px){
     .partner_subcontent1, .partner_subcontent2{
-        height: 430px;
+        min-height: 400px;
     }
 }
 @media screen and (max-width: 1300px){
@@ -677,6 +680,11 @@ footer {
     .citizen_mobilization_card1, .citizen_mobilization_card2, .citizen_mobilization_card3, .citizen_mobilization_card4{
         width: 49%;
         margin: 5px 0;
+    }
+}
+@media screen and (max-width: 1240px){
+    .partner_subcontent1, .partner_subcontent2{
+        min-height: 450px;
     }
 }
 @media screen and (max-width: 1000px) {
