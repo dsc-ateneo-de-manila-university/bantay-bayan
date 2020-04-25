@@ -31,6 +31,7 @@ nav {
     top: 5vh;
     right: 5vw;
     cursor: pointer;
+    margin: 0 16px;
 }
 
 .bar1,
@@ -132,6 +133,11 @@ footer {
 .footerSubContent {
     display: flex;
     flex-direction: column;
+    margin-left: 5px;
+}
+
+.footerSubContent label{
+    text-align: center;
 }
 
 .footerIcons {
@@ -169,7 +175,6 @@ footer {
     max-width: 100%;
     padding-top: 100px;
     margin-top: 70px;
-    ;
     background: url("../assets/images/bantay 1.png");
     background-size: cover;
 }
@@ -177,15 +182,14 @@ footer {
 .main_content {
     width: 30%;
     height: 40%;
-    margin-left: 10vw;
-    margin-top: 20vh;
+    margin: 15vh 0 25vh 10vw;
     font-size: 1.7em;
     font-family: 'Open Sans', sans-serif;
     color: #3C4B9D;
 }
 
 .main_content img {
-    width: 40vw;
+    width: 25vw;
     margin-bottom: 10px;
 }
 
@@ -205,18 +209,22 @@ footer {
     width: 50vw;
     height: 480px;
     max-width: 50%;
-    padding: 0 5vw;
+    padding: 0 8vw;
     background: #EC625D;
 }
 
-.helpdesk_content h1,
-p {
+.helpdesk_content p {
     font-family: 'Open Sans', sans-serif;
     color: white;
+    line-height: 22px;
 }
 
 .helpdesk_content h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin-top: 0;
     margin-bottom: 0;
+    line-height: 40px;
 }
 
 .helpdesk_content button {
@@ -255,18 +263,22 @@ p {
     width: 50vw;
     height: 480px;
     max-width: 50%;
-    padding: 0 5vw;
+    padding: 0 8vw;
     background: #3C4B9D;
 }
 
-.survey_content h1,
-p {
+.survey_content p {
     font-family: 'Open Sans', sans-serif;
     color: white;
+    line-height: 22px;
 }
 
 .survey_content h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin-top: 0;
     margin-bottom: 0;
+    line-height: 40px;
 }
 
 .survey_content button {
