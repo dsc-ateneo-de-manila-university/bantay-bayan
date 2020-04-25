@@ -365,6 +365,7 @@ footer {
     flex-direction: column;
     width: 100vw;
     max-width: 100%;
+    background: white;
 }
 .citizen_mobilization{
     display: flex;
@@ -529,7 +530,7 @@ footer {
     width: 80%; 
     color: #828282;
     font-family: 'Open Sans', sans-serif;
-    margin: 15vh auto 5vh auto;
+    margin: 60px auto 30px auto;
     text-align: center;
 }
 .partner_content{
@@ -605,51 +606,42 @@ footer {
     flex-direction: column;
     width: 100vw;
     max-width: 100%;
+    background: white;
 }
 .organizations_label p{
     width: 80%; 
     color: #828282;
     font-family: 'Open Sans', sans-serif;
-    margin: 15vh auto 50px auto;
+    margin: 60px auto 30px auto;
     text-align: center;  
 }
 .org_content{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 90px;
+    width: 75%; 
+    margin: auto;
+    padding-bottom: 90px;
 }
-.org1{
+.org{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     width: 15%;
-    margin: 0 20%;
+    margin: 30px 16px;
 }
-.the_initiative_ph_logo{
-    width: 120px;
-}
-.org1 h4{
+.org h4{
     font-family: 'Open Sans', sans-serif;
     color: #4F4F4F;
     margin: 5px 0;
     text-align: center;
 }
-.org2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 15%;
-    margin: 0 20%;
-}
-.kadiwa_logo{
+.the_initiative_ph_logo, .kadiwa_logo, .kilos_logo, .advocates_logo, .skc_logo{
+    object-fit: contain;
     width: 120px;
-}
-.org2 h4{
-    font-family: 'Open Sans', sans-serif;
-    color: #4F4F4F;
-    margin: 5px 0;
-    text-align: center;
+    height: 120px;
+    margin-bottom: 5px;
 }
 .about_footer{
     display: flex;
