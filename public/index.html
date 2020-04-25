@@ -27,9 +27,9 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="../stylesheets/normalize.css">
-  <link rel="stylesheet" href="../stylesheets/main.css">
-  <link rel="stylesheet" href="../stylesheets/styles.css">
+  <link rel="stylesheet" href="./src/stylesheets/normalize.css">
+  <link rel="stylesheet" href="./src/stylesheets/main.css">
+  <link rel="stylesheet" href="./src/stylesheets/styles.css">
 
 
 </head>
@@ -37,69 +37,71 @@
 <body>
 
   <nav>
-    <label for = "check" class = "burger_icon">
+    <label for="check" class="burger_icon">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
     </label>
 
-    <input type = "checkbox" class="checkbox" id="check">
-    
-    <a href="#" >
-      <img src="../assets/images/bantay_bayan_logo.png"  class="navLogo" alt="logo">
+    <input type="checkbox" class="checkbox" id="check" />
+
+    <a href="/">
+      <img src="./src/assets/images/bantay_bayan_logo.png" class="navLogo" alt="logo" />
     </a>
-    
+
     <ul class="page_menu">
-      <li><!--Buffer--></li>
       <li>
-        <a class="about" href="#">About</a>
+        <!--Buffer-->
       </li>
       <li>
-        <a class="forms" href="#">Forms</a>
+        <a class="about" href="about.html">About</a>
+      </li>
+      <li>
+        <div class="forms">Forms</div>
         <div class="formsdrop">
-          <a href="#">Weekly Reports</a>
-          <a href="#">Complaints</a>
-          <a href="#">Volunteers</a>
+          <a href="weekly-reports.html">Weekly Reports</a>
+          <a href="help-desk.html">Help Desk</a>
+          <a href="volunteers.html">Volunteers</a>
         </div>
       </li>
       <li>
-        <a class="faqs" href="#">FAQs</a>
+        <a class="faqs" href="faqs.html">FAQs</a>
       </li>
       <li>
-        <a class="team" href="#">Team</a>
+        <a class="team" href="teams.html">Team</a>
       </li>
       <li>
-        <a class="contact" href="#">Contact</a>
+        <a class="contact" href="contact.html">Contact</a>
       </li>
-    </ul> 
+    </ul>
   </nav>
 
 
   <div class="main">
     <div class="main_content">
-      <img src="../assets/images/bantay_bayan_logo.png" alt="logo">
+      <img src="./src/assets/images/bantay_bayan_logo.png">
       <br>
       <label>Para sa mabuting pamamahala sa panahon ng krisis!</label>
-    </div>   
+    </div>
   </div>
 
   <div class="helpdesk">
     <div class="helpdesk_content">
       <h1>BANTAY BAYAN <br> HELP DESK </h1>
       <p>
-        Gamit ang Bantay Bayan Helpdesk, maaaring mag-sumite ng tanong o reklamo ang bawat mamamayan ukol sa 
+        Gamit ang Bantay Bayan Helpdesk, maaaring mag-sumite ng tanong o reklamo ang bawat mamamayan ukol sa
         pag-responde ng LGU sa <br> COVID-19.
       </p>
       <a href="#">SEEK LEGAL AID</a>
     </div>
-     
-    <img src="../assets/images/Image.png" class="helpdesk_pic" alt="helpdesk picture">
-    
+
+    <img src="./src/assets/images/Image.png" class="helpdesk_pic">
+
   </div>
 
   <div class="survey">
 
-    <img src="../assets/images/Image.png" class="survey_pic" alt=" survey picture">
+    <img class="survey_pic" src="./src/assets/images/Image.png" alt="survey">
 
     <div class="survey_content">
       <h1>WEEKLY LGU <br> RESPONSE SURVEY </h1>
@@ -118,10 +120,10 @@
       </div>
       <a href="#">VOLUNTEER NOW</a>
       <div class="minimen">
-        <img src="../assets/images/Volunteers.png" alt="decoration">
-        <img src="../assets/images/Volunteers.png" alt="decoration">
-        <img src="../assets/images/Volunteers.png" alt="decoration">
-        <img src="../assets/images/Volunteers.png" alt="decoration">
+        <img src="./src/assets/images/Volunteers.png">
+        <img src="./src/assets/images/Volunteers.png">
+        <img src="./src/assets/images/Volunteers.png">
+        <img src="./src/assets/images/Volunteers.png">
       </div>
     </div>
   </div>
@@ -129,24 +131,37 @@
 
   <footer>
     <div class="footerContent">
-        <img src="../assets/images/bantay_bayan_logo.png" alt="logo" width="170">
-        <div class="footerSubContent">
-            <div class="footerIcons">
-                <a href="#"><img src="../assets/images/iconfinder_Rounded_Facebook_svg_5282541.png" alt="logo" width="50"></a>
-                <a href="#"><img src="../assets/images/iconfinder_Rounded_Instagram_svg_5282544 (1).png" alt="logo" width="50"></a>
-                <a href="#"><img src="../assets/images/iconfinder_Rounded_Twitter5_svg_5282551.png" alt="logo" width="50"></a>
-            </div>
-            <label>&copy; 2020 GoodGovPH. All Rights Reserved.</label>
-        </div>  
+      <img src="./src/assets/images/bantay_bayan_logo.png" alt="logo" width="170" />
+      <div class="footerSubContent">
+        <div class="footerIcons">
+          <a href="https://www.facebook.com/BantayBayanTayo" target="_blank" rel="noopener noreferrer">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="23" stroke="#333333" stroke-width="2" />
+              <path
+                d="M29.5 13.1666H26.25C24.8134 13.1666 23.4357 13.7373 22.4198 14.7531C21.404 15.769 20.8333 17.1467 20.8333 18.5833V21.8333H17.5833V26.1666H20.8333V34.8333H25.1667V26.1666H28.4167L29.5 21.8333H25.1667V18.5833C25.1667 18.296 25.2808 18.0204 25.484 17.8173C25.6871 17.6141 25.9627 17.5 26.25 17.5H29.5V13.1666Z"
+                stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+
+          <a href="https://www.facebook.com/BantayBayanTayo" target="_blank" rel="noopener noreferrer">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="23" stroke="#333333" stroke-width="2" />
+              <path
+                d="M35 15C34.0424 15.6755 32.9821 16.1922 31.86 16.53C31.2577 15.8376 30.4573 15.3467 29.567 15.124C28.6767 14.9012 27.7395 14.9572 26.8821 15.2845C26.0247 15.6118 25.2884 16.1944 24.773 16.9538C24.2575 17.7131 23.9877 18.6124 24 19.53V20.53C22.2426 20.5756 20.5013 20.1859 18.931 19.3955C17.3607 18.6051 16.0103 17.4387 15 16C15 16 11 25 20 29C17.9405 30.398 15.4872 31.099 13 31C22 36 33 31 33 19.5C32.9991 19.2215 32.9723 18.9436 32.92 18.67C33.9406 17.6635 34.6608 16.3928 35 15V15Z"
+                stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+        <label>&copy; 2020 GoodGovPH. All Rights Reserved.</label>
+      </div>
     </div>
 
     <div class="footerDSC">
-        <hr>
-        <label>Passionately Designed and Developed by Developer Student Clubs Loyola</label>
-    </div> 
+      <hr />
+      <label>Passionately Designed and
+        <a href="https://dscadmu.org">Developed by Developer Student Clubs Loyola</a></label>
+    </div>
   </footer>
-
-  <script src="./scripts/index.js"></script>
 </body>
 
 </html>
