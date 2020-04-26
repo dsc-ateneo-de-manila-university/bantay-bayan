@@ -127,16 +127,18 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 50px;
+    padding: 0 30px;
+    margin-top: 30px;
 }
 
 .footerSubContent {
     display: flex;
     flex-direction: column;
     margin-left: 5px;
+    padding: 0 16px;
 }
 
-.footerSubContent label{
+.footerSubContent label {
     text-align: center;
 }
 
@@ -467,7 +469,7 @@ footer {
 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
     .navLogo {
         margin-right: 60vw;
     }
