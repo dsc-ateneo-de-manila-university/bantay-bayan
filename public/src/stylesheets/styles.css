@@ -132,8 +132,12 @@ footer {
 .footerSubContent {
     display: flex;
     flex-direction: column;
+    margin-left: 5px;
 }
 
+.footerSubContent label{
+    text-align: center;
+}
 .footerIcons {
     display: flex;
     justify-content: center;
@@ -169,7 +173,6 @@ footer {
     max-width: 100%;
     padding-top: 100px;
     margin-top: 70px;
-    ;
     background: url("../assets/images/bantay 1.png");
     background-size: cover;
 }
@@ -177,14 +180,14 @@ footer {
 .main_content {
     width: 30%;
     height: 40%;
-    margin: 20vh 0 20vh 10vw;
+    margin: 15vh 0 25vh 10vw;
     font-size: 1.7em;
     font-family: 'Open Sans', sans-serif;
     color: #3C4B9D;
 }
 
 .main_content img {
-    width: 40vw;
+    width: 25vw;
     margin-bottom: 10px;
 }
 
@@ -204,17 +207,20 @@ footer {
     width: 50vw;
     height: 480px;
     max-width: 50%;
-    padding: 0 5vw;
+    padding: 0 8vw;
     background: #EC625D;
 }
 
-.helpdesk_content h1,
-p {
+.helpdesk_content p {
     font-family: 'Open Sans', sans-serif;
     color: white;
+    line-height: 22px;
 }
 
 .helpdesk_content h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    line-height: 40px;
     margin-bottom: 0;
 }
 
@@ -254,17 +260,20 @@ p {
     width: 50vw;
     height: 480px;
     max-width: 50%;
-    padding: 0 5vw;
+    padding: 0 8vw;
     background: #3C4B9D;
 }
 
-.survey_content h1,
-p {
+.survey_content p {
     font-family: 'Open Sans', sans-serif;
     color: white;
+    line-height: 22px;
 }
 
 .survey_content h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    line-height: 40px;
     margin-bottom: 0;
 }
 
@@ -736,11 +745,6 @@ p {
     color: #828282;
 }
 
-
-/*************************************************************************************************************/
-/*TEAM*/
-/*************************************************************************************************************/
-
 /*************************************************************************************************************/
 /*Organization Logos Section*/
 .organizations {
@@ -807,6 +811,88 @@ p {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 19px;
+}
+/*************************************************************************************************************/
+
+
+/*************************************************************************************************************/
+/*TEAM*/
+/*************************************************************************************************************/
+.teams_header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/images/about_bantaybayan.png");
+    background-position: center;
+}
+.teams_header h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+    margin-left: 8vw;
+}
+
+/*************************************************************************************************************/
+/*Structure Section*/
+.teams_structure{
+    width: 100vw;
+    max-width: 100%;
+    background: white;
+}
+.teams_structure_body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.teams_structure_body img{
+    width: 90vw;
+    margin: 80px 0;
+}
+
+/*************************************************************************************************************/
+/*GoodGovPH and DSC Section*/
+.team{
+    width: 100%;
+}
+.team_members{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 5%;
+}
+.member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+    height: 230px;
+    margin: 20px 0;
+}
+.member img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.member h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4F4F4F;
+    margin-bottom: 0;
+}
+.member h5{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 20px;
+    color: #3C4B9D;
+    margin-top: 0;
 }
 
 /*************************************************************************************************************/
@@ -1006,6 +1092,12 @@ p {
     .citizen_mobilization_card3,
     .citizen_mobilization_card4 {
         width: 98%;
+    }
+
+    /*TEAM SETTINGS*/
+
+    .teams_structure{
+        display: none;
     }
 }
 
