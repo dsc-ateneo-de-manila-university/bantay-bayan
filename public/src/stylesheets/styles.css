@@ -177,8 +177,7 @@ footer {
 .main_content {
     width: 30%;
     height: 40%;
-    margin-left: 10vw;
-    margin-top: 20vh;
+    margin: 20vh 0 20vh 10vw;
     font-size: 1.7em;
     font-family: 'Open Sans', sans-serif;
     color: #3C4B9D;
@@ -348,6 +347,394 @@ p {
 /*ABOUT*/
 /*************************************************************************************************************/
 
+/*Overview Section*/
+.ovw_bantaybayan {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 100vw;
+    height: 400px;
+    max-width: 100%;
+    margin-top: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/images/about_bantaybayan.png");
+    background-position: center;
+}
+
+.ovw_bantaybayan_content {
+    border: 1ppx solid black;
+    margin: 10vh 10vw;
+    color: white;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+}
+
+.ovw_bantaybayan_logo {
+    display: block;
+    width: 370px;
+    height: 160px;
+    margin: 8% 5% 5% 5%;
+}
+
+/*************************************************************************************************************/
+/*Enumeration Section*/
+.enm_bantaybayan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    max-width: 100%;
+    height: 640px;
+    padding-bottom: 5vh;
+    background: #F8F8F8;
+}
+
+.enm_bantaybayan_label {
+    display: flex;
+    width: 80vw;
+}
+
+.enm_bantaybayan_label p {
+    color: #828282;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.enm_bantaybayan_card1,
+.enm_bantaybayan_card2,
+.enm_bantaybayan_card3,
+.enm_bantaybayan_card4 {
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    height: 15vh;
+    padding: 8px 16px;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.enm_bantaybayan_card1 h1,
+.enm_bantaybayan_card2 h1,
+.enm_bantaybayan_card3 h1,
+.enm_bantaybayan_card4 h1 {
+    color: #EC403D;
+    font-size: 7vh;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 2vw;
+}
+
+.enm_bantaybayan_card1 p,
+.enm_bantaybayan_card2 p,
+.enm_bantaybayan_card3 p,
+.enm_bantaybayan_card4 p {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.enm_bantaybayan_card1:hover,
+.enm_bantaybayan_card2:hover,
+.enm_bantaybayan_card3:hover,
+.enm_bantaybayan_card4:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+/*************************************************************************************************************/
+/*Details Section*/
+.dtl_bantaybayan {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 100%;
+    background: white;
+}
+
+.citizen_mobilization {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 15vh auto 0 auto;
+}
+
+.citizen_mobilization_subcontent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.citizen_mobilization_subcontent div {
+    width: 60%;
+}
+
+.citizen_mobilization_subcontent h4 {
+    color: #3C4B9D;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.citizen_mobilization_subcontent h5 {
+    margin-bottom: 0;
+    color: #1d1c1c;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.citizen_mobilization_subcontent p {
+    color: #828282;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.citizen_mobilization_logo {
+    width: 270px;
+    height: 270px;
+}
+
+.citizen_mobilization_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.citizen_mobilization_card1,
+.citizen_mobilization_card2,
+.citizen_mobilization_card3,
+.citizen_mobilization_card4 {
+    width: 24%;
+    height: 200px;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.citizen_mobilization_card1 p,
+.citizen_mobilization_card2 p,
+.citizen_mobilization_card3 p,
+.citizen_mobilization_card4 p {
+    display: flex;
+    align-content: center;
+    color: #4F4F4F;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.citizen_mobilization_card1 img,
+.citizen_mobilization_card2 img,
+.citizen_mobilization_card3 img,
+.citizen_mobilization_card4 img {
+    width: 20px;
+    height: 20px;
+    margin: 5px 10px 0;
+}
+
+.citizen_mobilization_card1 ul,
+.citizen_mobilization_card2 ul,
+.citizen_mobilization_card3 ul,
+.citizen_mobilization_card4 ul {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 25px;
+    color: #828282;
+}
+
+.citizen_mobilization hr {
+    width: 100%;
+    margin-top: 7vh;
+}
+
+.legal_response {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.legal_response_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+}
+
+.legal_response_subcontent {
+    width: 60%;
+}
+
+.legal_response_subcontent h4 {
+    color: #3C4B9D;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.legal_response_subcontent p {
+    color: #828282;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.legal_response_logo {
+    width: 190px;
+    height: 190px;
+    margin: 0 5vw;
+}
+
+.lr_logo2 {
+    margin-left: 94px;
+}
+
+.legal_response hr {
+    width: 100%;
+    margin-top: 7vh;
+}
+
+.usap_tayo {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.usap_tayo_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+}
+
+.usap_tayo_subcontent {
+    width: 60%;
+}
+
+.usap_tayo_subcontent h4 {
+    color: #3C4B9D;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.usap_tayo_subcontent p {
+    color: #828282;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.usap_tayo_logo {
+    width: 190px;
+    height: 190px;
+    margin: 0 5vw;
+}
+
+.usap_tayo iframe {
+    width: 100%;
+    height: 232px;
+    margin-top: 7vh;
+    margin-bottom: 15vh;
+}
+
+/*************************************************************************************************************/
+/*Partner Section*/
+.partner_details {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 100%;
+    background: #F8F8F8;
+}
+
+.partner_label p {
+    width: 80%;
+    color: #828282;
+    font-family: 'Open Sans', sans-serif;
+    margin: 60px auto 30px auto;
+    text-align: center;
+}
+
+.partner_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto 15vh auto;
+    background: #F8F8F8;
+}
+
+.partner_subcontent1 {
+    width: 38%;
+    padding: 5%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    background: white;
+}
+
+.partner_subcontent1_head {
+    display: flex;
+    align-items: center;
+}
+
+.abt_good_gov_logo {
+    width: 80px;
+    margin-right: 10px;
+}
+
+.partner_subcontent1_head h4 {
+    font-family: 'Open Sans', sans-serif;
+    color: #4F4F4F;
+    margin-right: 10px;
+}
+
+.abt_fb_1 {
+    margin-right: 5px;
+}
+
+.partner_subcontent1 p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    color: #828282;
+}
+
+.partner_subcontent2 {
+    width: 38%;
+    padding: 5%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    background: white;
+}
+
+.partner_subcontent2_head {
+    display: flex;
+    align-items: center;
+}
+
+.abt_dsc_logo {
+    width: 80px;
+    margin-right: 10px;
+}
+
+.partner_subcontent2_head h4 {
+    font-family: 'Open Sans', sans-serif;
+    color: #4F4F4F;
+    margin-right: 10px;
+}
+
+.abt_fb_2 {
+    margin-right: 5px;
+}
+
+.partner_subcontent2 p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    color: #828282;
+}
 
 
 /*************************************************************************************************************/
@@ -355,6 +742,107 @@ p {
 /*************************************************************************************************************/
 
 /*************************************************************************************************************/
+/*Organization Logos Section*/
+.organizations {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 100%;
+    background: white;
+}
+
+.organizations_label p {
+    width: 80%;
+    color: #828282;
+    font-family: 'Open Sans', sans-serif;
+    margin: 60px auto 30px auto;
+    text-align: center;
+}
+
+.org_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 90px;
+}
+
+.org {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    height: 100%;
+    margin: 30px;
+}
+
+.org h4 {
+    font-family: 'Open Sans', sans-serif;
+    color: #4F4F4F;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.the_initiative_ph_logo,
+.kadiwa_logo,
+.kilos_logo,
+.advocates_logo,
+.skc_logo {
+    object-fit: contain;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 5px;
+}
+
+.about_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+    height: 235px;
+    border-top: 5px solid #FFEB34;
+    color: #828282;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+/*************************************************************************************************************/
+@media screen and (max-width: 1330px) {
+
+    .partner_subcontent1,
+    .partner_subcontent2 {
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    /*ABOUT SETTINGS*/
+
+    .citizen_mobilization_cards {
+        height: 420px;
+    }
+
+    .citizen_mobilization_card1,
+    .citizen_mobilization_card2,
+    .citizen_mobilization_card3,
+    .citizen_mobilization_card4 {
+        width: 49%;
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+
+    .partner_subcontent1,
+    .partner_subcontent2 {
+        min-height: 450px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .navLogo {
         width: 120px;
@@ -458,6 +946,67 @@ p {
         max-width: 100%;
     }
 
+    /*ABOUT SETTINGS*/
+
+    .ovw_bantaybayan_logo {
+        display: none;
+    }
+
+    .citizen_mobilization_subcontent div {
+        width: 100%;
+    }
+
+    .citizen_mobilization_logo {
+        display: none
+    }
+
+    .legal_response_logo {
+        display: none;
+    }
+
+    .legal_response_subcontent {
+        width: 100%
+    }
+
+    .usap_tayo_logo {
+        display: none;
+    }
+
+    .usap_tayo_subcontent {
+        width: 100%;
+    }
+
+    .partner_content {
+        flex-direction: column;
+    }
+
+    .partner_subcontent1 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .partner_subcontent2 {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    /*ABOUT SETTINGS*/
+
+    .citizen_mobilization_cards {
+        height: 910px;
+    }
+
+    .citizen_mobilization_card1,
+    .citizen_mobilization_card2,
+    .citizen_mobilization_card3,
+    .citizen_mobilization_card4 {
+        width: 98%;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -479,6 +1028,43 @@ p {
     .footerContent img,
     .footerIcons {
         margin-top: 10px;
+    }
+
+    /*ABOUT SETTINGS*/
+
+    .ovw_bantaybayan_content {
+        font-size: 12px;
+    }
+
+    .enm_bantaybayan_card1 p,
+    .enm_bantaybayan_card2 p,
+    .enm_bantaybayan_card3 p,
+    .enm_bantaybayan_card4 p {
+        font-size: 10px;
+    }
+
+    .citizen_mobilization_card1 p,
+    .citizen_mobilization_card2 p,
+    .citizen_mobilization_card3 p,
+    .citizen_mobilization_card4 p {
+        font-size: 11px;
+    }
+
+    .citizen_mobilization_card1 ul,
+    .citizen_mobilization_card2 ul,
+    .citizen_mobilization_card3 ul,
+    .citizen_mobilization_card4 ul {
+        font-size: 11px;
+    }
+
+    .org_content {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .org1,
+    .org2 {
+        margin-bottom: 40px;
     }
 }
 
