@@ -28,8 +28,8 @@ nav {
 .burger_icon {
     display: none;
     position: absolute;
-    top: 5vh;
-    right: 5vw;
+    top: 32px;
+    right: 32px;
     cursor: pointer;
     margin: 0 16px;
 }
@@ -48,6 +48,7 @@ nav {
     margin-left: 5vw;
 }
 
+
 .page_menu {
     display: flex;
     justify-content: space-between;
@@ -55,6 +56,10 @@ nav {
     margin-left: 30vw;
     margin-right: 10vw;
     list-style-type: none;
+}
+
+.formsdrop_independent{
+    display: none;
 }
 
 .about:hover {
@@ -77,7 +82,7 @@ nav {
     width: 220px;
     min-height: 130px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 2;
 }
 
 .formsdrop a {
@@ -135,12 +140,15 @@ footer {
     display: flex;
     flex-direction: column;
     margin-left: 5px;
-    <<<<<<< HEAD=======padding: 0 16px;
+    padding: 0 16px;
 }
 
 .footerSubContent label {
     text-align: center;
-    >>>>>>>adf58cb629d538027fb260d766ec5a22bc95eee6
+}
+
+.footerSubContent label {
+    text-align: center;
 }
 
 .footerSubContent label {
@@ -182,22 +190,10 @@ footer {
     max-width: 100%;
     padding-top: 100px;
     margin-top: 70px;
-    background: url("../assets/images/bantay 1.png");
-    background-size: cover;
-}
-
-.main_content {
-    width: 30%;
-    height: 40%;
-    margin: 15vh 0 25vh 10vw;
-    font-size: 1.7em;
-    font-family: 'Open Sans', sans-serif;
-    color: #3C4B9D;
-}
-
-.main_content img {
-    width: 25vw;
-    margin-bottom: 10px;
+    background: url("../assets/images/hero_image.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /*************************************************************************************************************/
@@ -207,6 +203,7 @@ footer {
     flex-wrap: nowrap;
     width: 100vw;
     max-width: 100%;
+    background: #2A3B91;
 }
 
 .helpdesk_content {
@@ -217,7 +214,6 @@ footer {
     height: 480px;
     max-width: 50%;
     padding: 0 8vw;
-    background: #EC625D;
 }
 
 .helpdesk_content p {
@@ -243,7 +239,7 @@ footer {
     padding: 16px 32px;
     border: 5px solid white;
     border-radius: 8px;
-    background-color: #EC625D;
+    background-color: #2A3B91;
     color: white;
     font-size: 14px;
     text-decoration: none;
@@ -261,6 +257,7 @@ footer {
     flex-wrap: nowrap;
     width: 100vw;
     max-width: 100%;
+    background: white;
 }
 
 .survey_content {
@@ -271,7 +268,7 @@ footer {
     height: 480px;
     max-width: 50%;
     padding: 0 8vw;
-    background: #3C4B9D;
+    background: #EC403D;
 }
 
 .survey_content p {
@@ -297,7 +294,7 @@ footer {
     padding: 16px 32px;
     border: 5px solid white;
     border-radius: 8px;
-    background-color: #3C4B9D;
+    background-color: #EC403D;
     color: white;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
@@ -341,8 +338,8 @@ footer {
     font-weight: bold;
     text-align: center;
     color: white;
-    background-color: #EC625D;
-    border: 1px solid #EC625D;
+    background-color: #EC403D;
+    border: 1px solid #EC403D;
     border-radius: 8px;
     text-decoration: none;
     padding: 16px 32px;
@@ -368,33 +365,36 @@ footer {
 /*************************************************************************************************************/
 
 /*Overview Section*/
+.whitebg{
+    background: white;
+}
+
 .ovw_bantaybayan {
     display: flex;
-    justify-content: space-around;
     align-content: center;
     width: 100vw;
     height: 400px;
     max-width: 100%;
     margin-top: 100px;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/images/about_bantaybayan.png");
-    background-position: center;
+    background: url("../assets/images/about_bantaybayan.png");
+    background-position: right bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .ovw_bantaybayan_content {
-    border: 1ppx solid black;
-    margin: 10vh 10vw;
-    color: white;
+    width: 35%;
+    margin: 10vh 5vw;
+    color: black;
     font-size: 17px;
     font-family: 'Open Sans', sans-serif;
     line-height: 30px;
 }
 
-.ovw_bantaybayan_logo {
-    display: block;
-    width: 370px;
-    height: 160px;
-    margin: 8% 5% 5% 5%;
+.ovw_bantaybayan_content h5{
+    margin-bottom: 0;
 }
+
 
 /*************************************************************************************************************/
 /*Enumeration Section*/
@@ -952,23 +952,24 @@ footer {
 @media screen and (max-width: 1000px) {
     .navLogo {
         width: 120px;
-        margin-right: 70vw;
+        margin-left: -45vw;
     }
 
     .burger_icon {
         display: block;
     }
 
-    .about:hover+.aboutdrop,
-    .forms:hover+.formsdrop,
-    .faqs:hover+.faqsdrop,
-    .contact:hover+.contactdrop {
+    #forms_id {
         display: none;
+    }
+
+    .formsdrop_independent {
+        display: block;
     }
 
     .page_menu {
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         width: 100vw;
         max-width: inherit;
         height: 100vh;
@@ -985,20 +986,36 @@ footer {
         opacity: 0;
     }
 
+    .page_menu li{
+        margin: 4vh 0;
+    }
+
     .about:hover {
         color: #2B3B92;
     }
 
-    .forms:hover {
-        color: #EB413A;
+    .WR_Form:hover {
+        color: #EB413A; 
+    }
+
+    .HD_Form:hover {
+        color: #2B3B92;
+    }
+
+    .V_Form:hover {
+        color: #EB413A; 
     }
 
     .faqs:hover {
         color: #2B3B92;
     }
 
+    .team:hover {
+        color: #EB413A;  
+    }
+
     .contact:hover {
-        color: #EB413A;
+        color: #2B3B92;
     }
 
     #check:checked~ul {
@@ -1006,25 +1023,14 @@ footer {
         opacity: 1;
     }
 
-    .main {
-        height: 100vh;
-        background-size: 95%;
-        background-repeat: no-repeat;
-        background-position: right bottom;
-    }
-
-    .main_content {
-        width: 60%;
-        margin-top: 10vh;
-    }
-
-    .main_content img {
-        width: 55vw;
+    .main{
+        background-size: 180% 100%;
+        background-position: right center;
     }
 
     .helpdesk {
         flex-direction: column-reverse;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     .helpdesk_content {
@@ -1039,7 +1045,7 @@ footer {
 
     .survey {
         flex-direction: column;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     .survey_content {
@@ -1056,6 +1062,10 @@ footer {
 
     .ovw_bantaybayan_logo {
         display: none;
+    }
+
+    .ovw_bantaybayan_content{
+        width: 75%;
     }
 
     .citizen_mobilization_subcontent div {
@@ -1121,14 +1131,23 @@ footer {
     }
 }
 
+@media screen and (max-width: 550px) {
+    .main{
+        height: 450px;
+    }
+    .ovw_bantaybayan_content{
+        font-size: 13px;
+    }
+}
+
 @media screen and (max-width: 375px) {
     .navLogo {
-        margin-right: 60vw;
+        margin-left: -43vw;
     }
 
     .main {
-        height: 470px;
-        margin-top: 0;
+        height: 300px;
+        margin-top: 100px;
     }
 
     .footerContent {
@@ -1145,6 +1164,7 @@ footer {
     /*ABOUT SETTINGS*/
 
     .ovw_bantaybayan_content {
+        width: 100%;
         font-size: 12px;
     }
 
