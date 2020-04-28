@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "node"
+script:
+  -
+deploy:
+  provider: firebase
+  token:
+    secure: "1//0ehNFguE7teXSCgYIARAAGA4SNwF-L9Ir_dcIiSy7_gxgPr1i3Oaj5p4d7j5jBgJR6JaW7uvaHttHcIofJGHwArnU6dQglbL50_Q"
+  project: "bantay-bayan"
+  message: "Deployed Bantay Bayan to Firebase Hosting"
