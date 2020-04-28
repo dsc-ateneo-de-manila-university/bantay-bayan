@@ -151,6 +151,10 @@ footer {
     text-align: center;
 }
 
+.footerSubContent label {
+    text-align: center;
+}
+
 .footerIcons {
     display: flex;
     justify-content: center;
