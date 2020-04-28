@@ -28,8 +28,8 @@ nav {
 .burger_icon {
     display: none;
     position: absolute;
-    top: 5vh;
-    right: 5vw;
+    top: 32px;
+    right: 32px;
     cursor: pointer;
     margin: 0 16px;
 }
@@ -48,6 +48,7 @@ nav {
     margin-left: 5vw;
 }
 
+
 .page_menu {
     display: flex;
     justify-content: space-between;
@@ -55,6 +56,10 @@ nav {
     margin-left: 30vw;
     margin-right: 10vw;
     list-style-type: none;
+}
+
+.formsdrop_independent{
+    display: none;
 }
 
 .about:hover {
@@ -943,29 +948,24 @@ footer {
 @media screen and (max-width: 1000px) {
     .navLogo {
         width: 120px;
-        margin-right: 70vw;
+        margin-left: -45vw;
     }
 
     .burger_icon {
         display: block;
     }
 
-    .formsdrop{
-        width: 100vw;
-        height: 59vh;
-        top: 41vh;
-        left: 0;
-        right: 0;
+    #forms_id {
+        display: none;
     }
 
-    .formsdrop a:hover {
-        color: #2A3B91;
-        background-color: white;
+    .formsdrop_independent {
+        display: block;
     }
 
     .page_menu {
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         width: 100vw;
         max-width: inherit;
         height: 100vh;
@@ -982,20 +982,36 @@ footer {
         opacity: 0;
     }
 
+    .page_menu li{
+        margin: 4vh 0;
+    }
+
     .about:hover {
         color: #2B3B92;
     }
 
-    .forms:hover {
-        color: #EB413A;
+    .WR_Form:hover {
+        color: #EB413A; 
+    }
+
+    .HD_Form:hover {
+        color: #2B3B92;
+    }
+
+    .V_Form:hover {
+        color: #EB413A; 
     }
 
     .faqs:hover {
         color: #2B3B92;
     }
 
+    .team:hover {
+        color: #EB413A;  
+    }
+
     .contact:hover {
-        color: #EB413A;
+        color: #2B3B92;
     }
 
     #check:checked~ul {
@@ -1122,7 +1138,7 @@ footer {
 
 @media screen and (max-width: 375px) {
     .navLogo {
-        margin-right: 60vw;
+        margin-left: -43vw;
     }
 
     .main {
