@@ -301,10 +301,26 @@ footer {
     padding: 16px 32px;
     border: 5px solid white;
     border-radius: 8px;
+    background-color: white;
+    color: #EC403D;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+#view-lgu-response {
+    width: 170px;
+    padding: 16px 32px;
+    margin-top: 10px;
+    border: 5px solid white;
+    border-radius: 8px;
     background-color: #EC403D;
     color: white;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.02em;
+    text-align: center;
     text-decoration: none;
 }
 
