@@ -13,6 +13,7 @@ nav {
     justify-content: center;
     align-items: center;
     position: fixed;
+    z-index: 9999999999999999999999999;
     left: 0;
     top: 0;
     width: 100vw;
@@ -58,7 +59,7 @@ nav {
     list-style-type: none;
 }
 
-.formsdrop_independent{
+.formsdrop_independent {
     display: none;
 }
 
@@ -365,7 +366,7 @@ footer {
 /*************************************************************************************************************/
 
 /*Overview Section*/
-.whitebg{
+.whitebg {
     background: white;
 }
 
@@ -391,7 +392,7 @@ footer {
     line-height: 30px;
 }
 
-.ovw_bantaybayan_content h5{
+.ovw_bantaybayan_content h5 {
     margin-bottom: 0;
 }
 
@@ -986,7 +987,7 @@ footer {
         opacity: 0;
     }
 
-    .page_menu li{
+    .page_menu li {
         margin: 4vh 0;
     }
 
@@ -995,7 +996,7 @@ footer {
     }
 
     .WR_Form:hover {
-        color: #EB413A; 
+        color: #EB413A;
     }
 
     .HD_Form:hover {
@@ -1003,7 +1004,7 @@ footer {
     }
 
     .V_Form:hover {
-        color: #EB413A; 
+        color: #EB413A;
     }
 
     .faqs:hover {
@@ -1011,7 +1012,7 @@ footer {
     }
 
     .team:hover {
-        color: #EB413A;  
+        color: #EB413A;
     }
 
     .contact:hover {
@@ -1023,7 +1024,7 @@ footer {
         opacity: 1;
     }
 
-    .main{
+    .main {
         background-size: 180% 100%;
         background-position: right center;
     }
@@ -1064,7 +1065,7 @@ footer {
         display: none;
     }
 
-    .ovw_bantaybayan_content{
+    .ovw_bantaybayan_content {
         width: 75%;
     }
 
@@ -1132,10 +1133,11 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
-    .main{
+    .main {
         height: 450px;
     }
-    .ovw_bantaybayan_content{
+
+    .ovw_bantaybayan_content {
         font-size: 13px;
     }
 }
