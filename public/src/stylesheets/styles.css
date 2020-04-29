@@ -278,6 +278,12 @@ footer {
     line-height: 22px;
 }
 
+.survey_content a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #2A3B91;
+}
+
 .survey_content h1 {
     font-family: 'Open Sans', sans-serif;
     color: white;
@@ -290,7 +296,7 @@ footer {
     text-decoration: none;
 }
 
-.survey_content a {
+#submit-lgu-response {
     width: 170px;
     padding: 16px 32px;
     border: 5px solid white;
