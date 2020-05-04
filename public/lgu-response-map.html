@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LGU Response Map | Bantay Bayan</title>
+    <meta property="og:title" content="Bantay Bayan" />
+    <meta developer="Harvey Jay Sison" site="https://harveysison.com">
+    <meta developer="Tanzell Go" site="https://github.com/tanzellgo">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bantaybayan.com/" />
+    <meta property="og:image" content="http://bantaybayan.com/src/assets/images/hero_image.png" />
+    <meta property="og:image:secure_url" content="https://bantaybayan.com/src/assets/images/hero_image.png" />
+    <meta property="og:site_name" content="Bantay Bayan" />
+    <meta property="og:description"
+        content="Ang Bantay Bayan ay citizen-watch program na inilunsad ng GoodGov PH upang siguraduhin na ang ating mga lokal na pamahalaan (LGU) ay may ginagawang mga hakbang sa mga pangangailangan ng mga mamamayan sa panahon ng krisis tulad ng COVID-19." />
+    <meta name="description"
+        content="Ang Bantay Bayan ay citizen-watch program na inilunsad ng GoodGov PH upang siguraduhin na ang ating mga lokal na pamahalaan (LGU) ay may ginagawang mga hakbang sa mga pangangailangan ng mga mamamayan sa panahon ng krisis tulad ng COVID-19." />
+
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.14.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.14.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.14.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.14.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.14.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/stylesheets/normalize.css">
+    <link rel="stylesheet" href="./src/stylesheets/main.css">
+    <link rel="stylesheet" href="./src/stylesheets/styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <label for="check" class="burger_icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </label>
+
+        <input type="checkbox" class="checkbox" id="check" />
+
+        <a href="index.html">
+            <img src="./src/assets/images/bantay_bayan_logo.png" class="navLogo" alt="logo" />
+        </a>
+
+        <ul class="page_menu">
+            <li>
+                <!--Buffer-->
+            </li>
+            <li>
+                <a class="about" href="about.html">About</a>
+            </li>
+
+            <!--Indepent Forms-->
+            <li class="formsdrop_independent">
+                <a href="weekly-reports.html" rel="noopener noreferrer" class="WR_Form">Weekly Reports</a>
+            </li>
+            <li class="formsdrop_independent">
+                <a href="help-desk.html" rel="noopener noreferrer" class="HD_Form">Help Desk</a>
+            </li>
+            <li class="formsdrop_independent">
+                <a href="volunteers.html" rel="noopener noreferrer" class="V_Form">Volunteers</a>
+            </li>
+            <!--End-->
+
+            <li id="forms_id">
+                <div class="forms">Forms</div>
+                <div class="formsdrop">
+                    <a href="weekly-reports.html" rel="noopener noreferrer">Weekly Reports</a>
+                    <a href="help-desk.html" rel="noopener noreferrer">Help Desk</a>
+                    <a href="volunteers.html" rel="noopener noreferrer">Volunteers</a>
+                </div>
+            </li>
+            <!-- <li>
+                <a class="faqs" href="faqs.html">FAQs</a>
+            </li> -->
+            <li>
+                <a class="team" href="teams.html">Team</a>
+            </li>
+            <li>
+                <a class="contact" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class='tableauPlaceholder' id='viz1588156397959'><noscript><a href='#'><img alt=' '
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;LG&#47;LGUResponse&#47;LGUResponseRating&#47;1_rss.png'
+                        style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='LGUResponse&#47;LGUResponseRating' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;LG&#47;LGUResponse&#47;LGUResponseRating&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' /></object>
+        </div>
+
+    </div>
+    <footer>
+        <div class="footerContent">
+            <img src="./src/assets/images/bantay_bayan_logo.png" alt="logo" width="170" className="footerLogo" />
+            <div class="footerSubContent">
+                <div class="footerIcons">
+                    <a href="https://www.facebook.com/BantayBayanTayo" target="_blank" rel="noopener noreferrer">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="23" stroke="#333333" stroke-width="2" />
+                            <path
+                                d="M29.5 13.1666H26.25C24.8134 13.1666 23.4357 13.7373 22.4198 14.7531C21.404 15.769 20.8333 17.1467 20.8333 18.5833V21.8333H17.5833V26.1666H20.8333V34.8333H25.1667V26.1666H28.4167L29.5 21.8333H25.1667V18.5833C25.1667 18.296 25.2808 18.0204 25.484 17.8173C25.6871 17.6141 25.9627 17.5 26.25 17.5H29.5V13.1666Z"
+                                stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+
+                    <a href="https://www.facebook.com/BantayBayanTayo" target="_blank" rel="noopener noreferrer">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="23" stroke="#333333" stroke-width="2" />
+                            <path
+                                d="M35 15C34.0424 15.6755 32.9821 16.1922 31.86 16.53C31.2577 15.8376 30.4573 15.3467 29.567 15.124C28.6767 14.9012 27.7395 14.9572 26.8821 15.2845C26.0247 15.6118 25.2884 16.1944 24.773 16.9538C24.2575 17.7131 23.9877 18.6124 24 19.53V20.53C22.2426 20.5756 20.5013 20.1859 18.931 19.3955C17.3607 18.6051 16.0103 17.4387 15 16C15 16 11 25 20 29C17.9405 30.398 15.4872 31.099 13 31C22 36 33 31 33 19.5C32.9991 19.2215 32.9723 18.9436 32.92 18.67C33.9406 17.6635 34.6608 16.3928 35 15V15Z"
+                                stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+                <label>&copy; 2020 GoodGovPH. All Rights Reserved.</label>
+            </div>
+        </div>
+
+        <div class="footerDSC">
+            <hr />
+            <label>Passionately Designed and Developed by
+                <a href="https://dscadmu.org">Developer Student Clubs Loyola</a></label>
+        </div>
+    </footer>
+
+
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1588156397959');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if (divElement.offsetWidth > 800) {
+            vizElement.style.width = '100%';
+            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+        } else if (divElement.offsetWidth > 500) {
+            vizElement.style.width = '100%';
+            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+        } else {
+            vizElement.style.width = '100%';
+            vizElement.style.height = '727px';
+        }
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+</body>
+
+</html>

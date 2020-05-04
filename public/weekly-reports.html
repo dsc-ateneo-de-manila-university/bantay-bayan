@@ -2,9 +2,9 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home | Bantay Bayan</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weekly Reports | Bantay Bayan</title>
   <meta property="og:title" content="Bantay Bayan" />
   <meta developer="Harvey Jay Sison" site="https://harveysison.com">
   <meta developer="Tanzell Go" site="https://github.com/tanzellgo">
@@ -18,6 +18,7 @@
   <meta name="description"
     content="Ang Bantay Bayan ay citizen-watch program na inilunsad ng GoodGov PH upang siguraduhin na ang ating mga lokal na pamahalaan (LGU) ay may ginagawang mga hakbang sa mga pangangailangan ng mga mamamayan sa panahon ng krisis tulad ng COVID-19." />
 
+
   <!-- update the version number as needed -->
   <script defer src="/__/firebase/7.14.0/firebase-app.js"></script>
   <!-- include only the Firebase features as you need -->
@@ -28,17 +29,14 @@
   <!-- initialize the SDK after all desired features are loaded -->
   <script defer src="/__/firebase/init.js"></script>
 
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="./src/stylesheets/normalize.css">
-  <link rel="stylesheet" href="./src/stylesheets/main.css">
-  <link rel="stylesheet" href="./src/stylesheets/styles.css">
-
-
+  <link rel="stylesheet" href="./src/stylesheets/normalize.css" />
+  <link rel="stylesheet" href="./src/stylesheets/main.css" />
+  <link rel="stylesheet" href="./src/stylesheets/styles.css" />
 </head>
 
 <body>
-
   <nav>
     <label for="check" class="burger_icon">
       <div class="bar1"></div>
@@ -48,7 +46,7 @@
 
     <input type="checkbox" class="checkbox" id="check" />
 
-    <a href="index.html">
+    <a href="/">
       <img src="./src/assets/images/bantay_bayan_logo.png" class="navLogo" alt="logo" />
     </a>
 
@@ -75,9 +73,9 @@
       <li id="forms_id">
         <div class="forms">Forms</div>
         <div class="formsdrop">
-          <a href="weekly-reports.html" rel="noopener noreferrer">Weekly Reports</a>
-          <a href="help-desk.html" rel="noopener noreferrer">Help Desk</a>
-          <a href="volunteers.html" rel="noopener noreferrer">Volunteers</a>
+          <a href="weekly-reports.html">Weekly Reports</a>
+          <a href="help-desk.html">Help Desk</a>
+          <a href="volunteers.html">Volunteers</a>
         </div>
       </li>
       <!-- <li>
@@ -92,60 +90,16 @@
     </ul>
   </nav>
 
-
-  <div class="main">
+  <div class="container">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSfv01pv85Bo5uQOypv-nTWeVahg0DmBgCjnRTJI6i0650GyYw/viewform?embedded=true"
+      style="width: 100%; height: 100vh; overflow-x: hidden !important;" frameborder="0" marginheight="0"
+      marginwidth="0">Loading…</iframe>
   </div>
-
-  <div class="helpdesk">
-    <div class="helpdesk_content">
-      <h1>BANTAY BAYAN <br> HELP DESK </h1>
-      <p>
-        Gamit ang Bantay Bayan Helpdesk, maaaring mag-sumite ng tanong o reklamo ang bawat mamamayan ukol sa
-        pag-responde ng LGU sa <br> COVID-19.
-      </p>
-      <a href="help-desk.html">SEEK LEGAL AID</a>
-    </div>
-
-    <img src="./src/assets/images/help_desk.png" class="helpdesk_pic">
-
-  </div>
-
-  <div class="survey">
-
-    <img class="survey_pic" src="./src/assets/images/weekly_response.png" alt="survey">
-
-    <div class="survey_content">
-      <h1>WEEKLY LGU <br> RESPONSE SURVEY </h1>
-      <p>
-        Gamit ang isang diagnostic tool (survey), linggo-linggong inaaseso ng bawat bantay-bayan ang LGU base. Narito
-        ang isang mapa na nagpapakita ng lawak ng mga tugon ng taong bayan patungkol
-        sa kanilang mga LGU.
-      </p>
-      <a href="weekly-reports.html" id="submit-lgu-response">SUBMIT LGU RESPONSE</a>
-      <a href="lgu-response-map.html" id="view-lgu-response">VIEW LGU RESPONSE</a>
-    </div>
-  </div>
-
-  <div class="volunteer">
-    <div class="volunteer_content">
-      <div class="volunteer_label">
-        <h1>Mag-volunteer Na!</h1>
-        <h3>Basahin ang primer &#8594;</h3>
-      </div>
-      <a href="volunteers.html">VOLUNTEER NOW</a>
-      <div class="minimen">
-        <img src="./src/assets/images/Volunteers.png">
-        <img src="./src/assets/images/Volunteers.png">
-        <img src="./src/assets/images/Volunteers.png">
-        <img src="./src/assets/images/Volunteers.png">
-      </div>
-    </div>
-  </div>
-
 
   <footer>
     <div class="footerContent">
-      <img src="./src/assets/images/bantay_bayan_logo.png" alt="logo" width="170" className="footerLogo" />
+      <img src="./src/assets/images/bantay_bayan_logo.png" alt="logo" width="170" />
       <div class="footerSubContent">
         <div class="footerIcons">
           <a href="https://www.facebook.com/BantayBayanTayo" target="_blank" rel="noopener noreferrer">
