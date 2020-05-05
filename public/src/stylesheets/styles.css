@@ -317,7 +317,7 @@ footer {
     border-radius: 8px;
     background-color: #EC403D;
     color: white;
-    font-size: 14px;
+    font-size: 13px;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.02em;
     text-align: center;
@@ -406,10 +406,10 @@ footer {
 }
 
 .ovw_bantaybayan_content {
-    width: 35%;
-    margin: 10vh 5vw;
+    width: 40%;
+    margin: 8vh 3vw;
     color: black;
-    font-size: 17px;
+    font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     line-height: 30px;
 }
@@ -535,6 +535,13 @@ footer {
 .citizen_mobilization_logo {
     width: 270px;
     height: 270px;
+}
+
+.criteria_head{
+    color: #3C4B9D;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold; 
 }
 
 .citizen_mobilization_cards {
@@ -802,7 +809,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 75%;
+    width: 85%;
     margin: auto;
     padding-bottom: 90px;
 }
@@ -823,11 +830,7 @@ footer {
     text-align: center;
 }
 
-.the_initiative_ph_logo,
-.kadiwa_logo,
-.kilos_logo,
-.advocates_logo,
-.skc_logo {
+.org_logos {
     object-fit: contain;
     width: 120px;
     height: 120px;
@@ -871,37 +874,44 @@ footer {
 }
 
 /*************************************************************************************************************/
-/*Structure Section*/
-.teams_structure {
-    width: 100vw;
-    max-width: 100%;
-    background: white;
-}
-
-.teams_structure_body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.teams_structure_body img {
-    width: 90vw;
-    margin: 80px 0;
-}
-
-/*************************************************************************************************************/
-/*GoodGovPH and DSC Section*/
+/*Bantay Bayan Core Section*/
 .team {
     width: 100%;
 }
 
-.team_members {
+.team_body {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    flex-wrap: wrap;
     width: 90%;
     padding: 5%;
+}
+
+.team_dept{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.team_dept h4{
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #2A3B91;
+}
+
+.team_dept hr{
+    border: 0.5px solid #828282;
+    width: 100%;
+}
+
+.team_members{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .member {
@@ -910,7 +920,7 @@ footer {
     align-items: center;
     width: 260px;
     height: 230px;
-    margin: 20px 0;
+    margin: 40px 10px;
 }
 
 .member img {
@@ -966,10 +976,21 @@ footer {
 
 @media screen and (max-width: 1240px) {
 
+    .ovw_bantaybayan_content {
+        width: 90%;
+        margin: 4vh 3vw;
+    }
+
     .partner_subcontent1,
     .partner_subcontent2 {
         min-height: 450px;
     }
+
+    .member{
+        width: 33.33%;
+        margin: 40px 0;
+    }
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -1087,10 +1108,6 @@ footer {
         display: none;
     }
 
-    .ovw_bantaybayan_content {
-        width: 75%;
-    }
-
     .citizen_mobilization_subcontent div {
         width: 100%;
     }
@@ -1131,6 +1148,12 @@ footer {
     }
 
 }
+@media screen and (max-width: 850px) {
+    .member{
+        width: 50%;
+    }
+}
+
 
 @media screen and (max-width: 700px) {
 
@@ -1160,7 +1183,18 @@ footer {
     }
 
     .ovw_bantaybayan_content {
-        font-size: 13px;
+        margin: 3vh 3vw;
+        font-size: 12px;
+    }
+
+    .member{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .ovw_bantaybayan_content {
+        font-size: 11px;
     }
 }
 
@@ -1188,8 +1222,12 @@ footer {
     /*ABOUT SETTINGS*/
 
     .ovw_bantaybayan_content {
+        margin: 0 3vw;
         width: 100%;
-        font-size: 12px;
+    }
+
+    .ovw_bantaybayan_content p{
+        margin-top: 0;
     }
 
     .enm_bantaybayan_card1 p,
