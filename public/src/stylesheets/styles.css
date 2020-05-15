@@ -354,7 +354,16 @@ footer {
     text-align: center;
 }
 
-.volunteer_content a {
+.volunteer_label a{
+    color: white;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.volunteer_label a:hover{
+    font-weight: 600;
+}
+
+.volunteer_button {
     width: 200px;
     height: 20px;
     font-family: 'Open Sans', sans-serif;
