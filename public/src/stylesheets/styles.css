@@ -246,6 +246,11 @@ footer {
     text-decoration: none;
 }
 
+.helpdesk_content a:hover{
+    color: #2A3B91;
+    background-color: white; 
+}
+
 .helpdesk_pic {
     width: 50vw;
     max-width: 50%;
@@ -309,6 +314,11 @@ footer {
     text-decoration: none;
 }
 
+#submit-lgu-response:hover{
+    color: white;
+    background-color: #EC403D; 
+}
+
 #view-lgu-response {
     width: 170px;
     padding: 16px 32px;
@@ -322,6 +332,11 @@ footer {
     letter-spacing: 0.02em;
     text-align: center;
     text-decoration: none;
+}
+
+#view-lgu-response:hover{
+    color: #EC403D;
+    background-color: white;
 }
 
 .survey_pic {
@@ -375,6 +390,12 @@ footer {
     border-radius: 8px;
     text-decoration: none;
     padding: 16px 32px;
+}
+
+.volunteer_button:hover{
+    border: 1px solid white;
+    background-color: white;
+    color: #EC403D;
 }
 
 .minimen {
