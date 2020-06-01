@@ -31,3 +31,16 @@ function toggleFaqBox(number) {
         }
     }
 }
+
+
+window.addEventListener("scroll", function(){
+    var sidebar = document.querySelector(".sidebar");
+    var footer = document.querySelector("footer");
+    if(this.innerWidth > 768){
+        if(this.scrollY <= (document.body.scrollHeight * 0.825)){
+            sidebar.style.paddingTop = `${this.scrollY}px`
+        }  
+    }
+})
+
+
