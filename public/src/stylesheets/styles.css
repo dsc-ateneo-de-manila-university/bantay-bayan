@@ -442,6 +442,7 @@ footer {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     line-height: 30px;
+    padding: 0 30px;
 }
 
 .ovw_bantaybayan_content h5 {
@@ -1190,6 +1191,10 @@ footer {
 @media screen and (max-width: 700px) {
 
     /*ABOUT SETTINGS*/
+
+    .ovw_bantaybayan_content p{
+        line-height: 23px;
+    }
 
     .citizen_mobilization_cards {
         height: 910px;
